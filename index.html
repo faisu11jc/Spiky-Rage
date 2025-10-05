@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Orange Squeeze - FAIZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="intro-screen">
+        <div id="glowing-door">
+            <div class="door-handle"></div>
+        </div>
+        <p id="tap-text">TAP TAP</p> 
+    </div>
+
+    <div id="typewriter-screen" class="hidden">
+        <h1 id="typewriter-text"></h1>
+        <p id="continue-prompt" class="hidden">Press [ENTER] to continue...</p>
+        <button id="next-button" class="hidden">Next</button>
+        <div id="transition-overlay" class="hidden"></div>
+    </div>
+    
+    <div id="level-select" class="hidden">
+        <h1>THE ASCENT</h1> 
+        <p class="subtitle">Select your path, **FAIZ**.</p>
+        <div id="level-grid">
+            </div>
+        <p class="hint-text">5 layers of challenge await.</p>
+    </div>
+    
+    <div id="game-screen" class="hidden">
+        <div id="game-container">
+            <div id="game-canvas">
+                <div id="player"></div>
+                <div id="text-overlay" class="hidden">pain.</div> </div>
+            <div id="game-ui">
+                <span class="ui-item">Level: <span id="current-level">1</span></span>
+                <span class="ui-item controls">Controls: [PC] A/D, W/Space | [Mobile] Left/Right Tap/Hold, Tap to Jump, Hold for Air</span>
+                <button id="back-to-levels">Level Select</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
